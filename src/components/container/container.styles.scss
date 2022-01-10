@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 60%;
+  height: 80px;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 60%;
+  max-height: 80px;
+
+  button {
+    background-color: grey;
+    cursor: pointer;
+  }
+
+  #result {
+    padding-left: 20px;
+  }
+}
