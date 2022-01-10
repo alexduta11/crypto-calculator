@@ -12,10 +12,12 @@ const Container = ({coins, result}) => (
         <button onClick={() => {
             coins.forEach(coin => 
                 {
-                    if(coin.coin === document.getElementById('coin-select').value){
-                        result = parseFloat(document.getElementById('value').value) * parseFloat(coin['coin/usd'])
-                        document.getElementById('result').innerHTML = "Your balance is " + result;
-                        document.querySelector('#result').style.display = 'flex';
+                    if(document.getElementById('value').value != ''){
+                        if(coin.coin === document.getElementById('coin-select').value){
+                            result = (parseFloat(document.getElementById('value').value) * parseFloat(coin['coin/usd'])).toFixed(3)
+                            document.getElementById('result').innerHTML = `Your balance is ${result}$`;
+                            document.querySelector('#result').style.display = 'flex';
+                        }
                     }
                 }
             )

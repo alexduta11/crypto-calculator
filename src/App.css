@@ -3,7 +3,9 @@ html {
 }
 
 body {
-  background: radial-gradient(#e66465, #9198e5);
+  background: radial-gradient(#363636, #1d1d1d);
   min-height: 100%;
   overflow-y: hidden;
+  color: white;
+  font-family: "Luxurious Roman", cursive;
 }
